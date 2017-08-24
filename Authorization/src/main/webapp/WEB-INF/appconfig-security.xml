@@ -20,9 +20,12 @@
 
     <authentication-manager alias="authenticationManager">
         <authentication-provider user-service-ref="userDetailsServiceImpl">
-            <password-encoder ref="encoder"/>
+            <password-encoder ref="encoder"></password-encoder>
         </authentication-provider>
     </authentication-manager>
+
+    <beans:bean id="userDetailsServiceImpl"
+                class="net.proselyte.springsecurityapp.service.UserDetailsServiceImpl"></beans:bean>
 
     <beans:bean id="encoder"
                 class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder">

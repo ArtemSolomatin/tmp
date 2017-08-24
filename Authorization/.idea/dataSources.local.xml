@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="authorization@localhost" uuid="2f6366f8-d398-4292-8f94-a108510e580b">
-      <database-info product="PostgreSQL" version="9.3.17" jdbc-version="4.2" driver-name="PostgreSQL JDBC Driver" driver-version="42.1.1">
-        <identifier-quote-string>&quot;</identifier-quote-string>
-      </database-info>
-      <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
+    <data-source name="MySQL - spring_security_app@localhost" uuid="64da39f0-ab2f-42bf-81b6-56f2174767a7">
       <secret-storage>master_key</secret-storage>
-      <user-name>postgres</user-name>
-      <resolve-scope>authorization:postgres,public</resolve-scope>
+      <user-name>root</user-name>
+      <schema-pattern>spring_security_app.*</schema-pattern>
+      <default-schemas>spring_security_app.*</default-schemas>
     </data-source>
   </component>
 </project>
